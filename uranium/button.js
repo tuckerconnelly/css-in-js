@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { View, TouchableOpacity } from 'react-native-web'
+import { BaseStyles, View, TouchableOpacity } from 'react-native-web';
 import Uranium from 'uranium';
 
 const styles = {
@@ -29,6 +29,7 @@ const styles = {
 
 const Button = Uranium(() => (
   <View css={styles.container}>
+    <BaseStyles />
     <TouchableOpacity css={styles.button}>
       Click me!
     </TouchableOpacity>
